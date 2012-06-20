@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'iOS6TwitterWidget' target in the 'iOS6TwitterWidget' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

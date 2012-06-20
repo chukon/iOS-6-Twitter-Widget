@@ -1,0 +1,351 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4EE99601159232060014D322 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EE99600159232060014D322 /* Foundation.framework */; };
+		4EE99603159232060014D322 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EE99602159232060014D322 /* UIKit.framework */; };
+		4EE9960E159232060014D322 /* iOS6TwitterWidgetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE9960D159232060014D322 /* iOS6TwitterWidgetController.m */; };
+		4EE9962115924A670014D322 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EE9962015924A670014D322 /* CoreGraphics.framework */; };
+		4EE9962315924E710014D322 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EE9962215924E710014D322 /* Twitter.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4EE995FD159232060014D322 /* iOS6TwitterWidget */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = iOS6TwitterWidget; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EE99600159232060014D322 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4EE99602159232060014D322 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4EE99607159232060014D322 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		4EE99608159232060014D322 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		4EE9960A159232060014D322 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		4EE9960B159232060014D322 /* iOS6TwitterWidget-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOS6TwitterWidget-Prefix.pch"; sourceTree = "<group>"; };
+		4EE9960C159232060014D322 /* iOS6TwitterWidgetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOS6TwitterWidgetController.h; sourceTree = "<group>"; };
+		4EE9960D159232060014D322 /* iOS6TwitterWidgetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS6TwitterWidgetController.m; sourceTree = "<group>"; };
+		4EE99613159232060014D322 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Package/System/Library/WeeAppPlugins/iOS6TwitterWidget.bundle/Info.plist; sourceTree = "<group>"; };
+		4EE99614159232060014D322 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = Package/System/Library/WeeAppPlugins/iOS6TwitterWidget.bundle/InfoPlist.strings; sourceTree = "<group>"; };
+		4EE99615159232060014D322 /* WeeAppBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "WeeAppBackground@2x.png"; path = "Package/System/Library/WeeAppPlugins/iOS6TwitterWidget.bundle/WeeAppBackground@2x.png"; sourceTree = "<group>"; };
+		4EE99616159232060014D322 /* WeeAppBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = WeeAppBackground.png; path = Package/System/Library/WeeAppPlugins/iOS6TwitterWidget.bundle/WeeAppBackground.png; sourceTree = "<group>"; };
+		4EE9962015924A670014D322 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4EE9962215924E710014D322 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4EE995F9159232060014D322 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EE9962315924E710014D322 /* Twitter.framework in Frameworks */,
+				4EE9962115924A670014D322 /* CoreGraphics.framework in Frameworks */,
+				4EE99601159232060014D322 /* Foundation.framework in Frameworks */,
+				4EE99603159232060014D322 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4EE995F1159232060014D322 = {
+			isa = PBXGroup;
+			children = (
+				4EE9962215924E710014D322 /* Twitter.framework */,
+				4EE9962015924A670014D322 /* CoreGraphics.framework */,
+				4EE99604159232060014D322 /* iOS6TwitterWidget */,
+				4EE995FF159232060014D322 /* Frameworks */,
+				4EE995FE159232060014D322 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4EE995FE159232060014D322 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4EE995FD159232060014D322 /* iOS6TwitterWidget */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4EE995FF159232060014D322 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4EE99600159232060014D322 /* Foundation.framework */,
+				4EE99602159232060014D322 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4EE99604159232060014D322 /* iOS6TwitterWidget */ = {
+			isa = PBXGroup;
+			children = (
+				4EE9960C159232060014D322 /* iOS6TwitterWidgetController.h */,
+				4EE9960D159232060014D322 /* iOS6TwitterWidgetController.m */,
+				4EE99605159232060014D322 /* Package */,
+				4EE99609159232060014D322 /* Supporting Files */,
+			);
+			path = iOS6TwitterWidget;
+			sourceTree = "<group>";
+		};
+		4EE99605159232060014D322 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				4EE99606159232060014D322 /* DEBIAN */,
+				4EE9960F159232060014D322 /* System */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		4EE99606159232060014D322 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				4EE99607159232060014D322 /* control.txt */,
+				4EE99608159232060014D322 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		4EE99609159232060014D322 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4EE9960A159232060014D322 /* PackageVersion.plist */,
+				4EE9960B159232060014D322 /* iOS6TwitterWidget-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4EE9960F159232060014D322 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				4EE99610159232060014D322 /* Library */,
+			);
+			name = System;
+			sourceTree = "<group>";
+		};
+		4EE99610159232060014D322 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				4EE99611159232060014D322 /* WeeAppPlugins */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		4EE99611159232060014D322 /* WeeAppPlugins */ = {
+			isa = PBXGroup;
+			children = (
+				4EE99612159232060014D322 /* ___PACKAGENAME___ */,
+			);
+			name = WeeAppPlugins;
+			sourceTree = "<group>";
+		};
+		4EE99612159232060014D322 /* ___PACKAGENAME___ */ = {
+			isa = PBXGroup;
+			children = (
+				4EE99613159232060014D322 /* Info.plist */,
+				4EE99614159232060014D322 /* InfoPlist.strings */,
+				4EE99615159232060014D322 /* WeeAppBackground@2x.png */,
+				4EE99616159232060014D322 /* WeeAppBackground.png */,
+			);
+			name = "___PACKAGENAME___";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4EE995FA159232060014D322 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4EE995FC159232060014D322 /* iOS6TwitterWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EE99619159232060014D322 /* Build configuration list for PBXNativeTarget "iOS6TwitterWidget" */;
+			buildPhases = (
+				4EE995F8159232060014D322 /* Sources */,
+				4EE995F9159232060014D322 /* Frameworks */,
+				4EE995FA159232060014D322 /* Headers */,
+				4EE995FB159232060014D322 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOS6TwitterWidget;
+			productName = iOS6TwitterWidget;
+			productReference = 4EE995FD159232060014D322 /* iOS6TwitterWidget */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4EE995F3159232060014D322 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 4EE995F6159232060014D322 /* Build configuration list for PBXProject "iOS6TwitterWidget" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4EE995F1159232060014D322;
+			productRefGroup = 4EE995FE159232060014D322 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4EE995FC159232060014D322 /* iOS6TwitterWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4EE995FB159232060014D322 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4EE995F8159232060014D322 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EE9960E159232060014D322 /* iOS6TwitterWidgetController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4EE99617159232060014D322 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = "$(iOSOpenDevPath)/frameworks/**";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		4EE99618159232060014D322 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = "$(iOSOpenDevPath)/frameworks/**";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		4EE9961A159232060014D322 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_EXTENSION = "";
+				EXECUTABLE_NAME = iOS6TwitterWidget;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOS6TwitterWidget/iOS6TwitterWidget-Prefix.pch";
+				INSTALL_PATH = /System/Library/WeeAppPlugins/iOS6TwitterWidget.bundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = YES;
+				iOSOpenDevCopyOnBuild = YES;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = YES;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+		4EE9961B159232060014D322 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_EXTENSION = "";
+				EXECUTABLE_NAME = iOS6TwitterWidget;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOS6TwitterWidget/iOS6TwitterWidget-Prefix.pch";
+				INSTALL_PATH = /System/Library/WeeAppPlugins/iOS6TwitterWidget.bundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = YES;
+				iOSOpenDevCopyOnBuild = YES;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = YES;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4EE995F6159232060014D322 /* Build configuration list for PBXProject "iOS6TwitterWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EE99617159232060014D322 /* Release */,
+				4EE99618159232060014D322 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4EE99619159232060014D322 /* Build configuration list for PBXNativeTarget "iOS6TwitterWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EE9961A159232060014D322 /* Release */,
+				4EE9961B159232060014D322 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4EE995F3159232060014D322 /* Project object */;
+}
