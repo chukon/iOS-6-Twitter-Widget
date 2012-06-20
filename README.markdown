@@ -1,0 +1,1 @@
+# iOS 6's share widget copied to iOS 5
