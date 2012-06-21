@@ -9,8 +9,9 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "SpringBoard/BBWeeAppController.h"
+#import <Twitter/Twitter.h>
 
-@interface iOS6TwitterWidgetController : NSObject <BBWeeAppController>
+@interface iOS6TwitterWidgetController : NSObject <BBWeeAppController, UIAlertViewDelegate>
 {
     UIView *_view;
 }

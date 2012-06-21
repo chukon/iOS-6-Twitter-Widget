@@ -48,6 +48,9 @@
         lbl.font = [UIFont boldSystemFontOfSize:17];
 		lbl.text = @"Tap to Tweet";
 		lbl.textAlignment = UITextAlignmentCenter;
+        UITapGestureRecognizer *labelTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tweetLabelTapped)];
+        [lbl setUserInteractionEnabled:YES];
+        [lbl addGestureRecognizer:labelTap];
 		[_view addSubview:lbl];
 		[lbl release];
         
@@ -60,6 +63,25 @@
 	}
 
 	return _view;
+}
+
+- (void) tweetLabelTapped {
+    UIViewController *viewController = [[UIViewController alloc] init];
+    UIWindow *window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    window.rootViewController = viewController;
+    window.windowLevel = UIWindowLevelAlert;
+    
+    [window makeKeyAndVisible];
+    TWTweetComposeViewController *tweetSheet = [[TWTweetComposeViewController alloc] init];
+    [tweetSheet setInitialText:@""];
+    [viewController presentModalViewController:tweetSheet animated:YES];
+    
+    tweetSheet.completionHandler = ^(TWTweetComposeViewControllerResult result){
+        if (result == TWTweetComposeViewControllerResultCancelled)
+            [viewController dismissModalViewControllerAnimated:YES];
+        [window release];
+    };
+    
 }
 
 - (float)viewHeight
