@@ -39,7 +39,8 @@
 		[_view addSubview:bgView];
 		[bgView release];
 
-		UILabel *lbl = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 250, 35)];
+		UILabel *lbl = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, _view.frame.size.width, 35)];
+        lbl.autoresizingMask = UIViewAutoresizingFlexibleWidth;
 		lbl.backgroundColor = [UIColor clearColor];
 		lbl.textColor = [UIColor colorWithRed:0.612 green:0.62 blue:0.643 alpha:1] /*#9c9ea4*/;
         lbl.shadowColor = [UIColor blackColor];
@@ -47,7 +48,6 @@
         lbl.font = [UIFont boldSystemFontOfSize:17];
 		lbl.text = @"Tap to Tweet";
 		lbl.textAlignment = UITextAlignmentCenter;
-        lbl.center = _view.center;
 		[_view addSubview:lbl];
 		[lbl release];
         
@@ -55,6 +55,7 @@
         UIImageView *birdView = [[UIImageView alloc] initWithImage:bird];
         birdView.frame = CGRectMake(9, 9, 22.5, 18.5);
         [_view addSubview:birdView];
+        [_view bringSubviewToFront:lbl];
         [birdView release];
 	}
 

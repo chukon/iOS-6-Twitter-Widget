@@ -50,8 +50,6 @@
 		4EE995F1159232060014D322 = {
 			isa = PBXGroup;
 			children = (
-				4EE9962215924E710014D322 /* Twitter.framework */,
-				4EE9962015924A670014D322 /* CoreGraphics.framework */,
 				4EE99604159232060014D322 /* iOS6TwitterWidget */,
 				4EE995FF159232060014D322 /* Frameworks */,
 				4EE995FE159232060014D322 /* Products */,
@@ -69,6 +67,8 @@
 		4EE995FF159232060014D322 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4EE9962215924E710014D322 /* Twitter.framework */,
+				4EE9962015924A670014D322 /* CoreGraphics.framework */,
 				4EE99600159232060014D322 /* Foundation.framework */,
 				4EE99602159232060014D322 /* UIKit.framework */,
 			);
@@ -344,6 +344,7 @@
 				4EE9961B159232060014D322 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
